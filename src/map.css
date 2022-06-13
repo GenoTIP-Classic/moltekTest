@@ -1,0 +1,12 @@
+
+  svg {
+    width: 1500px;
+    height: 600px;
+    margin-top: 3%;
+   padding-left: 5%;
+  }
+  
+  #g5 > path:hover {
+      fill: blue;
+  }
+ 
