@@ -23,16 +23,66 @@ import Manisa from "./components/UI/Manisa";
 import Tekirdag from "./components/UI/Tekirdag";
 //
 import "./map.css";
+import Kayseri from "./components/UI/Kayseri";
+import Karabuk from "./components/UI/Karabuk";
+import Adiyaman from "./components/UI/Adiyaman";
+import Afyonkarahisar from "./components/UI/Afyonkarahisar";
+import Agri from "./components/UI/Agri";
+import Amasya from "./components/UI/Amasya";
+import Artvin from "./components/UI/Artvin";
+import Aydin from "./components/UI/Aydin";
+import Balikesir from "./components/UI/Balikesir";
+import Bilecik from "./components/UI/Bilecik";
+import Bingol from "./components/UI/Bingol";
+import Bitlis from "./components/UI/Bitlis";
+import Bolu from "./components/UI/Bolu";
+import Burdur from "./components/UI/Burdur";
+import Canakkale from "./components/UI/Canakkale";
+import Cankiri from "./components/UI/Cankiri";
+import Corum from "./components/UI/Corum";
+import Denizli from "./components/UI/Denizli";
+import Edirne from "./components/UI/Edirne";
+import Elazig from "./components/UI/Elazig";
+import Erzincan from "./components/UI/Erzincan";
+import Erzurum from "./components/UI/Erzurum";
+import Eskisehir from "./components/UI/Eskisehir";
+import Gaziantep from "./components/UI/Gaziantep";
+import Giresun from "./components/UI/Giresun";
+import Gumushane from "./components/UI/Gumushane";
+import Hakkari from "./components/UI/Hakkari";
+import Hatay from "./components/UI/Hatay";
+import Kars from "./components/UI/Kars";
+import Kastamonu from "./components/UI/Kastamonu";
+import Kirklareli from "./components/UI/Kirklareli";
+import Kirsehir from "./components/UI/Kirsehir";
+import Kocaeli from "./components/UI/Kocaeli";
+import Kutahya from "./components/UI/Kutahya";
+import Malatya from "./components/UI/Malatya";
+import Kahramanmaras from "./components/UI/Kahramanmaras";
+import Mardin from "./components/UI/Mardin";
+import Mugla from "./components/UI/Mugla";
 
 const turkeyData = [
   {
     key: "Adana",
     component: (props) => <Adana {...props} />,
   },
-  { key: "Adıyaman", img: "imgs/3.jpg" },
-  { key: "Afyon", img: "imgs/4.jpg" },
-  { key: "Ağrı", img: "imgs/5.jpg" },
-  { key: "Amasya", img: "imgs/2.jpg" },
+  {
+    key: "Adiyaman",
+    component: (props) => <Adiyaman {...props} />,
+  },
+  {
+    key: "Afyonkarahisar",
+    component: (props) => <Afyonkarahisar {...props} />,
+  },
+  {
+    key: "Agri",
+    component: (props) => <Agri {...props} />,
+  },
+  {
+    key: "Amasya",
+    component: (props) => <Amasya {...props} />,
+  },
   {
     key: "Ankara",
     component: (props) => <Ankara {...props} />,
@@ -41,36 +91,102 @@ const turkeyData = [
     key: "Antalya",
     component: (props) => <Antalya {...props} />,
   },
-  { key: "Artvin", img: "imgs/5.jpg" },
-  { key: "Aydın", img: "imgs/2.jpg" },
-  { key: "Balıkesir", img: "imgs/3.jpg" },
-  { key: "Bilecik", img: "imgs/4.jpg" },
-  { key: "Bingöl", img: "imgs/5.jpg" },
-  { key: "Bitlis", img: "imgs/2.jpg" },
-  { key: "Bolu", img: "imgs/3.jpg" },
-  { key: "Burdur", img: "imgs/4.jpg" },
+  {
+    key: "Artvin",
+    component: (props) => <Artvin {...props} />,
+  },
+  {
+    key: "Aydin",
+    component: (props) => <Aydin {...props} />,
+  },
+  {
+    key: "Balikesir",
+    component: (props) => <Balikesir {...props} />,
+  },
+  {
+    key: "Bilecik",
+    component: (props) => <Bilecik {...props} />,
+  },
+  {
+    key: "Bingol",
+    component: (props) => <Bingol {...props} />,
+  },
+  {
+    key: "Bitlis",
+    component: (props) => <Bitlis {...props} />,
+  },
+  {
+    key: "Bolu",
+    component: (props) => <Bolu {...props} />,
+  },
+  {
+    key: "Burdur",
+    component: (props) => <Burdur {...props} />,
+  },
   {
     key: "Bursa",
     component: (props) => <Bursa {...props} />,
   },
-  { key: "Çanakkale", img: "imgs/2.jpg" },
-  { key: "Çankırı", img: "imgs/3.jpg" },
-  { key: "Çorum", img: "imgs/4.jpg" },
-  { key: "Denizli", img: "imgs/image.svg" },
+  {
+    key: "Canakkale",
+    component: (props) => <Canakkale {...props} />,
+  },
+  {
+    key: "Cankiri",
+    component: (props) => <Cankiri {...props} />,
+  },
+  {
+    key: "Corum",
+    component: (props) => <Corum {...props} />,
+  },
+  {
+    key: "Denizli",
+    component: (props) => <Denizli {...props} />,
+  },
   {
     key: "Diyarbakir",
     component: (props) => <Diyarbakir {...props} />,
   },
-  { key: "Edirne", img: "imgs/5.jpg" },
-  { key: "Elazığ", img: "imgs/2.jpg" },
-  { key: "Erzincan", img: "imgs/3.jpg" },
-  { key: "Erzurum", img: "imgs/4.jpg" },
-  { key: "Eskişehir", img: "imgs/5.jpg" },
-  { key: "Gaziantep", img: "imgs/2.jpg" },
-  { key: "Giresun", img: "imgs/3.jpg" },
-  { key: "Gümüşhane", img: "imgs/4.jpg" },
-  { key: "Hakkari", img: "imgs/5.jpg" },
-  { key: "Hatay", img: "imgs/2.jpg" },
+  {
+    key: "Edrine",
+    component: (props) => <Edirne {...props} />,
+  },
+  {
+    key: "Elazig",
+    component: (props) => <Elazig {...props} />,
+  },
+  {
+    key: "Erzincan",
+    component: (props) => <Erzincan {...props} />,
+  },
+  {
+    key: "Erzurum",
+    component: (props) => <Erzurum {...props} />,
+  },
+  {
+    key: "Eskisehir",
+    component: (props) => <Eskisehir {...props} />,
+  },
+  {
+    key: "Gaziantep",
+    component: (props) => <Gaziantep {...props} />,
+  },
+  {
+    key: "Giresun",
+    component: (props) => <Giresun {...props} />,
+  },
+  {
+    key: "Gumushane",
+    component: (props) => <Gumushane {...props} />,
+  },
+  {
+    key: "Hakkari",
+    component: (props) => <Hakkari {...props} />,
+  },
+  {
+    key: "Hatay",
+    component: (props) => <Hatay {...props} />,
+  },
   {
     key: "İsparta",
     component: (props) => <Isparta {...props} />,
@@ -87,25 +203,58 @@ const turkeyData = [
     key: "İzmir",
     component: (props) => <Izmir {...props} />,
   },
-  { key: "Kars", img: "imgs/3.jpg" },
-  { key: "Kastamonu", img: "imgs/4.jpg" },
-  { key: "Kayseri", img: "imgs/5.jpg" },
-  { key: "Kırklareli", img: "imgs/2.jpg" },
-  { key: "Kırşehir", img: "imgs/3.jpg" },
-  { key: "Kocaeli", img: "imgs/4.jpg" },
+  {
+    key: "Kars",
+    component: (props) => <Kars {...props} />,
+  },
+  {
+    key: "Kastamonu",
+    component: (props) => <Kastamonu {...props} />,
+  },
+  {
+    key: "Kayseri",
+    component: (props) => <Kayseri {...props} />,
+  },
+  {
+    key: "Kirklareli",
+    component: (props) => <Kirklareli {...props} />,
+  },
+  {
+    key: "Kirsehir",
+    component: (props) => <Kirsehir {...props} />,
+  },
+  {
+    key: "Kocaeli",
+    component: (props) => <Kocaeli {...props} />,
+  },
   {
     key: "Konya",
     component: (props) => <Konya {...props} />,
   },
-  { key: "Kütahya", img: "imgs/2.jpg" },
-  { key: "Malatya", img: "imgs/3.jpg" },
+  {
+    key: "Kutahya",
+    component: (props) => <Kutahya {...props} />,
+  },
+  {
+    key: "Malatya",
+    component: (props) => <Malatya {...props} />,
+  },
   {
     key: "Manisa",
     component: (props) => <Manisa {...props} />,
   },
-  { key: "Kahramanmaraş", img: "imgs/5.jpg" },
-  { key: "Mardin", img: "imgs/2.jpg" },
-  { key: "Muğla", img: "imgs/3.jpg" },
+  {
+    key: "Kahramanmaras",
+    component: (props) => <Kahramanmaras {...props} />,
+  },
+  {
+    key: "Mardin",
+    component: (props) => <Mardin {...props} />,
+  },
+  {
+    key: "Mugla",
+    component: (props) => <Mugla {...props} />,
+  },
   { key: "Muş", img: "imgs/4.jpg" },
   { key: "Nevşehir", img: "imgs/5.jpg" },
   { key: "Niğde", img: "imgs/2.jpg" },
@@ -141,7 +290,10 @@ const turkeyData = [
   { key: "Ardahan", img: "imgs/2.jpg" },
   { key: "Iğdır", img: "imgs/3.jpg" },
   { key: "Yalova", img: "imgs/4.jpg" },
-  { key: "Karabük", img: "imgs/5.jpg" },
+  {
+    key: "Karabuk",
+    component: (props) => <Karabuk {...props} />,
+  },
   { key: "Kilis", img: "imgs/2.jpg" },
   { key: "Osmaniye", img: "imgs/3.jpg" },
   { key: "Düzce", img: "imgs/4.jpg" },
